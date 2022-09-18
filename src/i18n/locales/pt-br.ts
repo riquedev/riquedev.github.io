@@ -55,6 +55,14 @@ export default {
                     title: "Paper/Java",
                     text: "Criar plugins para servidores MC"
                 },
+                aws: {
+                    title: "Amazon Web Services",
+                    text: ""
+                },
+                gcp: {
+                    title: "Google Cloud Platform",
+                    text: ""
+                }
             },
             mygithub: "Meu GitHub",
             recomendations: "Recomendações"

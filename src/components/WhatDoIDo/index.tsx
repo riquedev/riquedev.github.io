@@ -13,7 +13,7 @@ import {CheckIcon} from '@chakra-ui/icons';
 import Translator from "../i18n/Translator";
 
 // Replace test data with your own
-const skills = ["django", "python", "php","godot",'javascript','nodejs','reactjs','nextjs','radstudio',"kotlin","paper"]
+const skills = ["django", "python", "php","godot",'javascript','nodejs','reactjs','nextjs','radstudio',"kotlin","paper","aws","gcp"]
 
 const features = skills.map((element, index) => {
     const pathText = `home.skills.${element}.text`;
