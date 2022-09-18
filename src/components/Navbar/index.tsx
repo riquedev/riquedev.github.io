@@ -101,7 +101,7 @@ const DesktopNav = () => {
                                 minW={'sm'}>
                                 <Stack>
                                     {navItem.children.map((child) => (
-                                        <DesktopSubNav {...child} />
+                                        <DesktopSubNav key={child.id} {...child} />
                                     ))}
                                 </Stack>
                             </PopoverContent>
@@ -154,7 +154,7 @@ const MobileNav = () => {
             p={4}
             display={{md: 'none'}}>
             {NAV_ITEMS.map((navItem) => (
-                <MobileNavItem {...navItem} />
+                <MobileNavItem key={navItem.id} {...navItem} />
             ))}
         </Stack>
     );
@@ -200,7 +200,7 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
                     align={'start'}>
                     {children &&
                         children.map((child) => (
-                            <Link key={child.key} py={2} href={child.href} target={child.target}>
+                            <Link key={child.id} py={2} href={child.href} target={child.target}>
                                 {child.label}
                             </Link>
                         ))}
@@ -211,7 +211,7 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
 };
 
 interface NavItem {
-    key: string;
+    id: string;
     label: string | ReactElement;
     subLabel?: string;
     children?: Array<NavItem>;
@@ -221,13 +221,13 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
     {
-        key: "linkedin",
+        id: "linkedin",
         label: 'LinkedIn',
         href: 'https://www.linkedin.com/in/riquedev/',
         target: "_blank"
     },
     {
-        key: "github",
+        id: "github",
         label: 'GitHub',
         href: 'https://github.com/riquedev',
         target: "_blank"
