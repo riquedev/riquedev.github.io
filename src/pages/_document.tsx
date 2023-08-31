@@ -28,6 +28,7 @@ export default class Document extends NextDocument {
                         data-chats-widget-id="d275cdd3-58fb-413f-90f1-1fd4760bc439"/>
                 <Script
                     src="sendpulse.js"
+                    strategy="beforeInteractive"
                 />
                 </body>
             </Html>
