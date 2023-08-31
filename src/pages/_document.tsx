@@ -27,7 +27,7 @@ export default class Document extends NextDocument {
                 <Script async src="https://pop-ups.sendpulse.com/assets/loader.js"
                         data-chats-widget-id="d275cdd3-58fb-413f-90f1-1fd4760bc439"/>
                 <Script
-                    src="sendpuls.js"
+                    src="sendpulse.js"
                     strategy="beforeInteractive" // lazyOnload, afterInteractive
                 />
                 </body>
